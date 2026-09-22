@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remédios</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="phone">
+    <header class="page-header">
+      <h1>Meus Remédios</h1>
+    </header>
+
+    <main>
+      <div id="lista">
+
+      </div>
+      <button id="novo" class="add">
+        + Cadastrar Novo Remédio
+      </button>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item" data-page="index.html">
+        <span class="nav-icon">⌂</span>
+        <small>Início</small>
+      </button>
+      <button class="nav-item active" data-page="remedios.html">
+        <span class="nav-icon">◇</span>
+        <small>Remédios</small>
+      </button>
+      <button class="nav-item">
+        <span class="nav-icon">□</span>
+        <small>Histórico</small>
+      </button>
+      <button class="nav-item">
+        <span class="nav-icon">🛒</span>
+        <small>Compras</small>
+      </button>
+    </nav>
+  </div>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/adicionar-remedio.js"></script>
+
+
+  <script>document.getElementById("novo").onclick = () => location.href = "adicionar-remedio.html"</script>
+
+</body>
+
+</html>

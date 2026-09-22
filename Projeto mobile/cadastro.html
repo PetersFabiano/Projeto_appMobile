@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cuidar - Criar Conta</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <main class="cadastro-container">
+
+        <!-- Ícone superior -->
+        <div class="icone-logo">
+            <i data-lucide="heart-pulse"></i>
+        </div>
+
+        <!-- Título -->
+        <h1>Cuidar</h1>
+
+        <p class="descricao">
+            O aplicativo simples para lembrar de seus<br>
+            remédios.
+        </p>
+
+        <!-- Formulário -->
+        <form id="formCadastro">
+
+            <!-- Nome -->
+            <div class="campo">
+
+                <label for="nome">
+                    Seu Nome Completo
+                </label>
+
+                <div class="input-container">
+                    <i data-lucide="user"></i>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Ex: Francisco de Assis"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- E-mail -->
+            <div class="campo">
+
+                <label for="email">
+                    Seu E-mail <span>(Opcional)</span>
+                </label>
+
+                <div class="input-container">
+                    <i data-lucide="mail"></i>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Ex: francisco@email.com"
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- Celular -->
+            <div class="campo">
+
+                <label for="celular">
+                    Número do Celular
+                </label>
+
+                <div class="input-container">
+                    <i data-lucide="phone"></i>
+
+                    <input
+                        type="tel"
+                        id="celular"
+                        placeholder="Ex: (11) 98765-4321"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- Botão -->
+            <button type="submit">
+                Criar Minha Conta
+            </button>
+
+        </form>
+
+
+        <!-- Texto inferior -->
+        <p class="termos">
+            Ao continuar, você concorda com o uso seguro dos<br>
+            seus dados para os alarmes.
+        </p>
+
+    </main>
+
+
+    <script src="./js/cadastro.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>
